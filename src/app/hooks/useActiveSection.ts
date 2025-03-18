@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useActiveSection = (sectionIds: string[]): string => {
+function useActiveSection(sectionIds: string[]) {
   const [activeSection, setActiveSection] = useState<string>("");
 
   useEffect(() => {
@@ -26,6 +26,6 @@ const useActiveSection = (sectionIds: string[]): string => {
   }, [sectionIds]);
 
   return activeSection;
-};
+}
 
 export default useActiveSection;

@@ -1,56 +1,40 @@
 "use client";
 import useActiveSection from "@/app/hooks/useActiveSection";
 
-type NavItem = {
-  name: string;
-  href: string;
-};
+const navItems = [
+  { name: "Resume", href: "#resume" },
+  { name: "Experience", href: "#experience" },
+  { name: "Projects", href: "#projects" },
+];
 
 export default function Nav() {
-  const activeSection = useActiveSection([
-    "about",
-    "experience",
-    "projects",
-    "contact",
-  ]);
-
-  const navItems: NavItem[] = [
-    { name: "About", href: "#about" },
-    { name: "Experience", href: "#experience" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
-  ];
-
-  const getNavItemClasses = (href: string) => {
-    const isActive = activeSection === href.substring(1);
-    return {
-      linkClass: isActive ? "active" : "",
-      indicatorClass: `nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all ${
-        isActive
-          ? "active w-16 bg-foreground h-2"
-          : "group-hover:w-16 group-hover:bg-foreground group-hover:h-px"
-      }`,
-      textClass: `nav-text text-xs font-bold uppercase tracking-widest ${
-        isActive
-          ? "text-foreground"
-          : "text-slate-500 group-hover:text-foreground"
-      }`,
-    };
-  };
+  const activeSection = useActiveSection(["resume", "experience", "projects"]);
 
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 flex flex-col lg:gap-4">
       <nav className="lg:flex hidden">
-        <ul className="flex flex-col w-max text-start gap-6 uppercase text-xs font-medium">
-          {navItems.map((item: NavItem) => {
-            const { linkClass, indicatorClass, textClass } = getNavItemClasses(
-              item.href,
-            );
+        <ul className="flex flex-col w-max text-start gap-3 uppercase text-xs font-medium transition-all duration-300">
+          {navItems.map(({ name, href }) => {
+            const isActive = activeSection === href.substring(1);
+
             return (
-              <li key={item.name} className="group">
-                <a href={item.href} className={`py-3 ${linkClass}`}>
-                  <span className={indicatorClass}></span>
-                  <span className={textClass}>{item.name}</span>
+              <li key={name} className="group">
+                <a
+                  href={href}
+                  className={`py-2 flex items-center gap-2 transition-all duration-200 ${
+                    isActive
+                      ? "scale-115 translate-x-8 text-blue-500 font-bold"
+                      : "text-slate-500 group-hover:text-blue-500"
+                  }`}
+                >
+                  <span
+                    className={`nav-indicator h-px w-6 bg-slate-600 transition-all ${
+                      isActive
+                        ? "w-12 h-2 bg-blue-500"
+                        : "bg-slate-600 group-hover:w-12 group-hover:bg-blue-500 group-hover:h-px"
+                    }`}
+                  />
+                  {name}
                 </a>
               </li>
             );
