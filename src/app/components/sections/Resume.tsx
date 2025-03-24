@@ -1,4 +1,4 @@
-function ResumeSection() {
+function About() {
   return (
     <div>
       <p>
@@ -15,4 +15,4 @@ function ResumeSection() {
   );
 }
 
-export default ResumeSection;
+export default About;

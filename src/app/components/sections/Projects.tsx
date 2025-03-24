@@ -1,4 +1,4 @@
-function ProjectsSection() {
+function Projects() {
   return (
     <div>
       <h3>Projects</h3>
@@ -7,4 +7,4 @@ function ProjectsSection() {
   );
 }
 
-export default ProjectsSection;
+export default Projects;

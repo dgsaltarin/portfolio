@@ -1,15 +1,15 @@
-function AboutSection() {
+function Hero() {
   return (
     <div>
       <h1 className="text-[42px] font-bold lg:text-start">Daniel Saltarin</h1>
-      <h2>Software Engineer</h2>
+      <h3>Software Engineer</h3>
       <p>
-        I help innovative startups in AI, Web3, and Finance craft exceptional
-        user experiences, translating complex technologies into intuitive
-        interfaces that resonate with humans.
+        I like creating software that helps people. I use my knowledge and
+        experience to create scalable software, I enjoy backend most that
+        anything.
       </p>
     </div>
   );
 }
 
-export default AboutSection;
+export default Hero;

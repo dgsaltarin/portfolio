@@ -71,6 +71,21 @@ a:hover {
 }
 
 /* === NAVIGATION === */
+@layer components {
+  .nav-indicator {
+    @apply inline-block align-middle mr-4 h-px w-8 bg-[var(--primary-color)];
+  }
+
+  .group:hover .nav-indicator,
+  .group:focus-within .nav-indicator {
+    @apply bg-[var(--primary-color)] w-16 h-0.5;
+  }
+
+  .nav-indicator.active,
+  .group .nav-indicator {
+    @apply bg-[var(--primary-color)] w-16 h-0.5;
+  }
+}
 
 /* === BUTTONS === */
 .btn {

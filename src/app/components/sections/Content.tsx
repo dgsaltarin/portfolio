@@ -1,13 +1,5 @@
 import { JSXElementConstructor, ReactElement } from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-
-export const navItems: { name: string; href: string }[] = [
-  { name: "about", href: "/#about" },
-  { name: "experience", href: "/#experience" },
-  { name: "projects", href: "/#projects" },
-  { name: "blog", href: "/#blog" },
-];
+import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 export const socialLinks: {
   id: string;
@@ -15,9 +7,9 @@ export const socialLinks: {
   icon: ReactElement<any, string | JSXElementConstructor<any>>;
 }[] = [
   {
-    id: "Twitter",
-    url: "https://www.twitter.com/dgsaltarin",
-    icon: <FaXTwitter size={25} color="#6A6A6A" />,
+    id: "Instagram",
+    url: "https://www.instagram.com/dgsaltarin",
+    icon: <FaInstagram size={25} color="#6A6A6A" />,
   },
   {
     id: "GitHub",

@@ -23,7 +23,7 @@ const experiences = [
   },
 ];
 
-function ExperienceSection() {
+function Experience() {
   return (
     <section id="experience" className="max-w-3xl mx-auto py-12 lg:py-24">
       <h2 className="text-3xl font-bold text-[#ccd6f6] mb-6">Experience</h2>
@@ -36,4 +36,4 @@ function ExperienceSection() {
   );
 }
 
-export default ExperienceSection;
+export default Experience;
