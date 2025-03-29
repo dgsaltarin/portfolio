@@ -28,10 +28,10 @@ export default function Nav() {
                   }`}
                 >
                   <span
-                    className={`nav-indicator h-px w-16 bg-slate-600 transition-all ${
+                    className={`nav-indicator h-px w-12 bg-slate-600 transition-all ${
                       isActive
-                        ? "w-12 h-2 bg-blue-500"
-                        : "bg-slate-600 group-hover:w-12 group-hover:bg-blue-500 group-hover:h-px"
+                        ? "w-20 h-2 bg-blue-500"
+                        : "bg-slate-600 group-hover:w-20 h-3 group-hover:bg-blue-500 group-hover:h-px"
                     }`}
                   />
                   {name}

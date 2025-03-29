@@ -3,22 +3,34 @@ import ExperienceCard from "../common/Card";
 const experiences = [
   {
     title: "Software Engineer",
-    company: "TechCorp",
-    date: "Jan 2023 - Present",
+    company: "Source Meridian",
+    date: "September 2024 - Present",
     description: [
-      "Developed a scalable web application using React and Next.js.",
-      "Integrated RESTful APIs with backend services in Go.",
-      "Implemented CI/CD pipelines for faster deployments.",
+      "Developed and maintained scalable backend services using Go.",
+      "Work with database schemas and queries to ensure high performance.",
+      "Colaborate in the design and implemtation of new features.",
     ],
   },
   {
-    title: "Frontend Developer",
-    company: "StartupX",
-    date: "May 2021 - Dec 2022",
+    title: "Full Stack Developer",
+    company: "FARMU",
+    date: "March 2022 - September 2024",
     description: [
-      "Designed and built an interactive UI using Tailwind CSS.",
-      "Optimized website performance, improving load speed by 30%.",
-      "Collaborated with backend developers to improve API integration.",
+      "Create serverless applications using AWS Lambda using Go.",
+      "Design and Develop backend application with Go and Gin Framework.",
+      "Create infrastructure solution using AWS services.",
+      "Design and implement CI/CD workflows for the Software solution.",
+    ],
+  },
+  {
+    title: "Junior Software Engineer",
+    company: "Zabud Technologies",
+    date: "July 2020 - March 2022",
+    description: [
+      "Develop features using java with sprint boot.",
+      "Deploy microservices into AWS Cloud.",
+      "Write unit tests using Junit and Mockito",
+      "Develop reactive forms and responsive web applications with Angular.",
     ],
   },
 ];
