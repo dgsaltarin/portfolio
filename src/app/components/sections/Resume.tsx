@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div>
+    <section id="resume">
       <p>
         Software engineer with more than four years of experience. Skilled in
         Go, Java and Python programming languages. Experience working with
@@ -11,7 +11,7 @@ function About() {
         industry advancements and eager to tackle new challenges in a dynamic
         work environment.
       </p>
-    </div>
+    </section>
   );
 }
 

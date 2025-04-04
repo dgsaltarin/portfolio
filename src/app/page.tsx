@@ -17,7 +17,7 @@ export default function Home() {
               <Hero />
               <NavigationSection />
             </div>
-            <div>
+            <div className="flex justify-start">
               <SocialLinks />
             </div>
           </header>
@@ -25,15 +25,9 @@ export default function Home() {
             id="content"
             className="flex flex-col pt-6 lg:pt-24 lg:w-1/2 lg:py-16 gap-4"
           >
-            <section id="resume">
-              <About />
-            </section>
-            <section id="experience">
-              <Experience />
-            </section>
-            <section id="projects">
-              <Projects />
-            </section>
+            <About />
+            <Experience />
+            <Projects />
           </main>
         </div>
       </div>

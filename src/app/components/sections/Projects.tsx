@@ -1,9 +1,9 @@
 function Projects() {
   return (
-    <div>
+    <section id="projects">
       <h3>Projects</h3>
       <p>Online resume created with Next.js, Tailwind CSS, and TypeScript.</p>
-    </div>
+    </section>
   );
 }
 
