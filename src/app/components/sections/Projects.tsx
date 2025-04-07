@@ -1,9 +1,15 @@
+import ProjectCard from "@/app/components/common/ProjectCard";
+import PorfolioImage from "../../../../content/projects/project-1.png";
+
 function Projects() {
   return (
-    <section id="projects">
-      <h3>Projects</h3>
-      <p>Online resume created with Next.js, Tailwind CSS, and TypeScript.</p>
-    </section>
+    <ProjectCard
+      title="Portfolio"
+      description="A Personal website builded with Next.js and Tailwind CSS"
+      technologies={["React", "Tailwind", "Typescript"]}
+      imageSrc={PorfolioImage}
+      link="https://danielsaltarin.com"
+    />
   );
 }
 
