@@ -1,12 +1,14 @@
-# My Portfolio Website
+# danielsaltarin.com
 
 This is a [Next.js](https://nextjs.org/) portfolio project bootstrapped with
 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img width="1397" alt="project-1" src="https://github.com/user-attachments/assets/acc3c434-2134-4291-beaf-28fb91d5be63" />
+
 
 ## Inspiration
 
 This website design was inspired by [Brittany Chiang's portfolio](https://brittanychiang.com/).
-Credit to her for the beautiful design and layout concepts.
+Credit to her for the beautiful design and layout concepts. Also you could visit this website at [daniel saltarin](https://danielsaltarin.com/)
 
 ## Technical Stack
 
