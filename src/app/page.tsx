@@ -1,5 +1,5 @@
 "use client";
-import Hero from "./components/sections/Hero";
+import Hero from "@/app/components/sections/Hero";
 import NavigationSection from "./components/sections/Navigation";
 import SocialLinks from "./components/sections/SocialLinks";
 import Experience from "./components/sections/Experience";
