@@ -1,4 +1,6 @@
 "use client";
+import Head from "next/head";
+import Script from "next/script";
 import Hero from "@/app/components/sections/Hero";
 import NavigationSection from "./components/sections/Navigation";
 import SocialLinks from "./components/sections/SocialLinks";
@@ -7,8 +9,32 @@ import Projects from "./components/sections/Projects";
 import About from "./components/sections/Resume";
 
 export default function Home() {
+  const googleTagId = process.env.NEXT_PUBLIC_GOOGLE_TAG_ID;
+
   return (
     <>
+      <Head>
+        {/* Google Analytics */}
+        {googleTagId && (
+          <Script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${googleTagId}`}
+          />
+        )}
+        {googleTagId && (
+          <Script
+            id="google-analytics"
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${googleTagId}');
+              `,
+            }}
+          />
+        )}
+      </Head>
       <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 flex">
         {/* Two-column layout for large screens */}
         <div className="lg:flex lg:justify-between lg:items-start">
